@@ -23,7 +23,7 @@
 .lessonList__owlImage {
   width: 4rem;
   height: 4.375rem;
-  background-image: url("./img/owl.png");
+  background-image: url("/img/owl.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -91,7 +91,7 @@
   &:before {
     content: "";
     position: absolute;
-    background-image: url("./img/list-item-icon.svg");
+    background-image: url("/img/list-item-icon.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 1.5rem;
