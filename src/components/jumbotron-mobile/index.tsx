@@ -17,7 +17,7 @@ export const JumbotronMobile = () => (
         </p>
       </div>
       <div className={s.jumbtron__footer}>
-        <p>Открой своё IT-лето!</p>
+        <p className={s.footer__text}>Открой своё IT-лето!</p>
         <Button title="Записаться" />
       </div>
     </div>
