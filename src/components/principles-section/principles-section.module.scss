@@ -1,0 +1,64 @@
+@import "../../mixins/container";
+@import "../../mixins/typography";
+
+.principlesSection {
+  background-color: #fff;
+  padding-top: 3.375rem;
+}
+
+.principlesSection__container {
+  @include container;
+}
+
+.principlesSection__heading {
+  @include h2($text-align: left);
+  margin-bottom: 1rem;
+}
+
+.principlesSection__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.principlesSection__card {
+  flex: 0 0 50%;
+  margin-bottom: 1rem;
+}
+
+.principlesSection__icon {
+  height: 3.75rem;
+  margin-bottom: 1rem;
+}
+
+.principlesSection__text {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1440px) {
+  .principlesSection {
+    background-color: #f6f7f9;
+    padding-top: 5.375rem;
+  }
+
+  .principlesSection__heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .principlesSection__cards {
+    flex-wrap: nowrap;
+    gap: 1.25rem;
+  }
+
+  .principlesSection__card {
+    flex: 1 1 25%;
+  }
+
+  .principlesSection__icon {
+    margin-bottom: 1.25rem;
+  }
+
+  .principlesSection__text {
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../mixins/_container";
+
+.jumbotron {
+  background-image: url("./img/jumbotron-d.png");
+  background-color: #fff;
+  height: 33.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron__content {
+  padding-top: 2.375rem;
+  @include container;
+}
+
+.jumbotron__heading {
+  font-size: 2.625rem;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  max-width: 38.625rem;
+}
+
+.jumbotron__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.jumbotron__upperTexts {
+  display: flex;
+  gap: 4rem;
+}
+
+.jumbotron__text {
+  align-self: flex-start;
+  position: relative;
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid;
+    border-image-source: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+    border-image-slice: 1;
+    top: -1rem;
+  }
+}
+
+.jumbotron__text--large {
+  font-size: 1.75rem;
+  font-weight: 700;
+
+  &:before {
+    top: 0;
+  }
+}
+
+.footer__text {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer__button {
+  max-width: 11.25rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .jumbotron {
+    background-color: #f6f7f9;
+  }
+}

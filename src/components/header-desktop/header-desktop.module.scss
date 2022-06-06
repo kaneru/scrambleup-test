@@ -1,0 +1,70 @@
+.header {
+  height: 6.875rem;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+
+.header__menuList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.header__menuListItem {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header__link {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header__extra {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.header__citySelectWrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header__citySelect {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.875rem;
+  font-weight: 500;
+  max-width: 6rem;
+}
+
+.header__phoneLink {
+  font-size: 1rem;
+}
+
+.header__userLink {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}

@@ -1,0 +1,89 @@
+@import "../../mixins/container";
+
+.footer {
+  background-color: rgba(0, 9, 60, 1);
+}
+
+.footer__container {
+  @include container;
+  padding-top: 4.375rem;
+  padding-bottom: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3.75rem;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-top: 4rem;
+  }
+}
+
+.footer__socialIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.footer__text--white {
+  color: #fff;
+}
+
+.footer__phoneLink {
+  margin-top: 2.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer__address {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer__emailLink {
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.footer__copyrightText {
+  font-size: 0.75rem;
+  color: rgba(189, 189, 189, 1);
+  margin-top: 2rem;
+}
+
+.column__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.column__heading {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.column__listItem {
+  font-size: 0.875rem;
+}
+
+.listItem__link {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}

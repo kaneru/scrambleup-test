@@ -1,0 +1,47 @@
+.jumbotron__image {
+  background-image: url("./img/jumbotron-m.png");
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron__content {
+  padding: 1rem 0.625rem 1.25rem;
+  background-color: rgba(0, 9, 60, 1);
+}
+
+.jumbotron__heading {
+  font-size: 1.625rem;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.25;
+  margin-bottom: 3rem;
+}
+
+.jumbotron__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.jumbotron__text {
+  align-self: flex-start;
+  position: relative;
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.jumbotron__text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 2px solid;
+  border-image-source: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+  border-image-slice: 1;
+  top: -1rem;
+}
+
+.jumbotron__text--large {
+  font-size: 1.75rem;
+  font-weight: 700;
+}

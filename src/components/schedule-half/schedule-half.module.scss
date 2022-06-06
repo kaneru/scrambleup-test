@@ -1,0 +1,58 @@
+@import "../../mixins/container";
+@import "../../mixins/typography";
+
+.scheduleHalf {
+  background-color: #00093c;
+}
+
+.scheduleHalf__container {
+  @include container;
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.scheduleHalf__heading {
+  @include h2($color: #fff);
+  margin-bottom: 2.25rem;
+}
+
+.scheduleHalf__lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.375rem;
+  gap: 1rem;
+}
+
+.scheduleHalf__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.scheduleHalf__listItem {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .scheduleHalf__container {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .scheduleHalf__lists {
+    flex-direction: row;
+    justify-content: center;
+    gap: 6.25rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .scheduleHalf__button {
+    display: block;
+    max-width: 12rem;
+    margin: 0 auto;
+  }
+}
